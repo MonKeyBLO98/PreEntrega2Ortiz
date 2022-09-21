@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0D1012;
+    font-family: "Raleway";
+}
+@font-face {
+    font-family: "PlayfairDisplaySC";
+    src: url(../Assets/Font/PlayfairDisplaySC/PlayfairDisplaySC-Regular.ttf);
+}
+@font-face {
+    font-family: "Raleway";
+    src: url(../Assets/Font/Raleway/Raleway-Regular.ttf);
+}
+
+h3{
+    font-family: "PlayfairDisplaySC";
+    color: #BE8928;
+    text-align: left;
+    padding: 20px;
+    font-size: 2rem;
+}
+#top{
+    text-align: center;
+}
+p{
+    font-family: "Raleway";
+    color: #D02C31;
+    text-align: center;
+}
+
+.logo{
+    height: 100px;
+}
+nav{
+    text-align: center;
+}
+.menu{
+    list-style-type: none;
+    background-color: #D02C31;
+    padding: 0px 10px;
+}
+.menu .item{
+    display: inline-block;
+    position: relative;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.menu .submenu{
+    position: absolute;
+    display: none;
+}
+.menu .submenu .sub_i{
+    display: block;
+    font-size: 1rem;
+    padding: auto;
+}
+.menu .item a{
+    color: #4A2D03;
+    text-decoration: none;
+    font-weight: bolder;
+    display: inline-block;
+    padding: 10px 35px;
+}
+.menu .item a:hover{
+    color: #BE8928;
+}
+.menu .item:hover .submenu{
+    display: block;
+    
+}
+.menu .item:hover a{
+    background-color: #730408; 
+    color: #BE8928;
+}
+.sectionComics{
+    width: 100%;
+    padding: 0px auto;
+}
+.sectionComics .comic{
+    display: inline-block;
+    padding: 10px 2%;
+    
+}
+.sectionComics .comic .poster{
+    width: 200px;
+}
+
+.sectionMCU{
+    width: 100%;
+    padding: 0px auto;
+}
+.sectionMCU .serie{
+    display: inline-block;
+    padding: 10px 2%;
+}
+.sectionMCU .pelicula{
+    display: inline-block;   
+    padding: 10px 2%;
+}
+.sectionMCU .serie .poster{
+    display: block;
+    width: 200px;
+    
+}
+.sectionMCU .pelicula .poster{
+    display: block;
+    width: 200px;
+    
+}
+.sectionMCU .serie .nombre{
+    display: block;
+    overflow-wrap: break-word;
+    width: 200px;    
+    
+}
+.sectionMCU .pelicula .nombre{
+    display: inline-block;
+    overflow-wrap: break-word;
+    width: 200px;
+    
+}
+
+.sectionTierList{
+    width: 100%;
+    padding: 0px auto;
+}
+.sectionTierList .character{
+    display: inline-block;
+    padding: 10px 2%;
+}
+.sectionTierList .character .poster{
+    display: block;
+    width: 200px;    
+}
+.sectionTierList .character .nombre{
+    display: inline-block;
+    width: 200px;    
+}
+
+footer {
+    text-align: center;
+    background-color: #D02C31;
+    height: 30px;
+}
+footer .foot{
+    text-decoration: none;
+    font-family: "Raleway"; 
+    font-weight: bold;
+    padding: 10px 20px;
+    top: 5px;
+}
+.heightcontainer .sectionMCU{
+    height: 90vh;
+}

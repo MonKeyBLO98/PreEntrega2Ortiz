@@ -5,111 +5,301 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marveler</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/estilo.css">
     <link rel="shortcut icon" href="./Assets/Logotipos/Marveler Icon.png">
 </head>
-<body>
-    <header class="navBack">
-		<div id="top">
-            <img class="logo" src="./Assets/Logotipos/Marveler Logo.png" alt="logo sitio">
-        </div>	
-		<nav>
-            <ul class="menu">
-                <li class="item"><a href="index.html">Inicio</a></li>
-			    <li class="item"><a href="./Views/comics.html">Comics</a></li>
-			    <li class="item"><a href="./Views/mcu.html">MCU+</a>
-			        <ul class="submenu">
-                        <li class="sub_i"><a href="./Views/peliculas.html">Peliculas</a></li>
-			            <li class="sub_i"><a href="./Views/series.html">Series TV</a></li>
-			        </ul>
-			    </li>
-			    <li class="item"><a href="./Views/tierList.html">Tier list</a></li>
-			</ul> 
-		</nav>
-	</header>
+<body>  
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: lightblue;"> <!-- #04070a -->
+            <div class="container-fluid">
+                <!-- navbar-brand -->
+              <a class="navbar-brand" href="#">
+                <img class="logo " src="./Assets/Logotipos/marvelerLogo.png" alt="logo sitio" width="200">
+              </a>
+                <!-- navbar-toggler -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Views/comics.html">Comics</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        MCU
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./Views/peliculas.html">Peliculas</a></li>
+                      <li><a class="dropdown-item" href="./Views/series.html">Series TV</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./Views/mcu.html">MCU+</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Tier list</a>
+                  </li>
+                </ul>
+                <!-- search -->
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                  </form>
+                <!-- loggin -->
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                  </div>
+              </div>
+            </div>
+          </nav>
+    </header>
 
     <main class="main">
+        <!-- section Comics -->
         <section class="sectionComics">
-            <h3> Ultimos Comics</h3>
-            <div class="comic">
-                <img class="poster" src="./Assets/Comics/Daredevil.jpg" alt="Daredevil">
-                <p class="nombre">Daredevil</p>
-            </div>
-            <div class="comic">
-                <img class="poster" src="./Assets/Comics/EdgeofSpiderVerse.jpg" alt="EdgeOfSpiderVerse">
-                <p class="nombre">Edge of SpiderVerse</p>
-            </div>
-            <div class="comic">
-                <img class="poster" src="./Assets/Comics/IronCat.jpg" alt="IronCat">
-                <p class="nombre">Iron Cat</p>
-            </div>
-            <div class="comic">
-                <img class="poster" src="./Assets/Comics/MsMarvel&MoonKnight.jpg" alt="MsMarvel&MoonKnight">
-                <p class="nombre">Ms Marvel & MoonKnight</p>
-            </div>           
-            <div class="comic">
-                <img class="poster" src="./Assets/Comics/AgeofUltron1_.jpg" alt="AgeofUltron #1">
-                <p class="nombre">Age of Ultron #1</p>
-            </div>           
-            <div class="comic">
-                <img class="poster" src="./Assets/Comics/DoctorStrange1_.jpg" alt="DoctorStrange#1">
-                <p class="nombre">Doctor Strange #1</p>
-            </div>           
+            <h1> Last comics</h1>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 m-auto" mx="auto">
+                <div class="col">
+                    <div class="card h-100" style="width: 16rem;">
+                        <img src="./Assets/Comics/daredevil.jpg" class="card-img-top" alt="Daredevil">
+                        <div class="card-body">
+                            <h3 class="card-title">Daredevil</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100" style="width: 16rem;">
+                        <img src="./Assets/Comics/edgeofSpiderVerse.jpg" class="card-img-top" alt="EdgeOfSpiderVerse">
+                        <div class="card-body">
+                            <h3 class="card-title">Edge of SpiderVerse</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100" style="width: 16rem;">
+                        <img src="./Assets/Comics/ironCat.jpg" class="card-img-top" alt="IronCat">
+                        <div class="card-body">
+                            <h3 class="card-title">Iron Cat</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100" style="width: 16rem;">
+                        <img src="./Assets/Comics/msMarvel&MoonKnight.jpg" class="card-img-top" alt="MsMarvel&MoonKnight">
+                        <div class="card-body">
+                            <h3 class="card-title">Ms Marvel & MoonKnight</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100" style="width: 16rem;">
+                        <img src="./Assets/Comics/ageofUltron1.jpg" class="card-img-top" alt="AgeofUltron #1">
+                        <div class="card-body">
+                            <h3 class="card-title">Age of Ultron #1</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100" style="width: 16rem;">
+                        <img src="./Assets/Comics/doctorStrange1.jpg" class="card-img-top" alt="DoctorStrange#1">
+                        <div class="card-body">
+                            <h3 class="card-title">Doctor Strange #1</h3>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col">
+                    <div class="card h-100" style="width: 16rem;">
+                        <img src="./Assets/Comics/hulk4.jpg" class="card-img-top" alt="Hulk#4">
+                        <div class="card-body">
+                            <h3 class="card-title">Hulk #4</h3>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col">
+                    <div class="card h-100" style="width: 16rem;">
+                        <img src="./Assets/Comics/jessicaJones1.jpg" class="card-img-top" alt="JessicaJones#1">
+                        <div class="card-body">
+                            <h3 class="card-title">Jessica Jones #1</h3>
+                        </div>
+                    </div>  
+                </div>
+              </div>        
         </section>
+        <!-- carousel MCU --> 
         <section class="sectionMCU">
-            <h3> Ultimas Peliculas y Series</h3> 
-            <div class="serie">
-                <img class="poster" src="./Assets/Series/29b_SheHulk.jpg" alt="SheHulk">
-                <p class="nombre">SheHulk</p>
+            <h1> Last movies and series</h1> 
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card mb-3 m-auto" style="max-width: 50%;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="./Assets/Series/29b_SheHulk.jpg" class="img-fluid rounded-start" alt="SheHulk">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">SheHulk</h4>
+                                <h5 class="card-subtitle">Serie</h5>
+                                
+                                <p class="card-text">In She-Hulk: Attorney at Law, Jennifer Walters (Tatiana Maslany)—an attorney specializing in superhuman-oriented legal cases—must navigate the complicated life of a single, 30-something who also happens to be a green 6-foot-7-inch superpowered hulk.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card mb-3 m-auto" style="max-width: 50%;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="./Assets/Series/29a_IAmGroot.jpg" class="img-fluid rounded-start" alt="IAmGroot">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">I am Groot</h4>
+                                <h5 class="card-subtitle">Serie</h5>
+                              <p class="card-text">There’s no guarding the galaxy from this mischievous toddler! Get ready as Baby Groot takes center stage in his very own collection of shorts, exploring his glory days growing up—and getting into trouble—among the stars.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card mb-3 m-auto" style="max-width: 50%;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="./Assets/Movies/29_Thor_LoveAndThunder.jpg" class="img-fluid rounded-start" alt="ThorLoveAndThunder">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h4 class="card-title">Thor Love and Thunder</h4>
+                              <h5 class="card-subtitle">Movie</h5>
+                              <p class="card-text">Marvel Studios’ “Thor: Love and Thunder” finds the God of Thunder on a journey unlike anything he’s ever faced—one of self-discovery. But his efforts are interrupted by a galactic killer known as Gorr the God Butcher, who seeks the extinction of the gods. To combat the threat, Thor enlists the help of King Valkyrie, Korg and ex-girlfriend Jane Foster, who—to Thor’s surprise—inexplicably wields his magical hammer, Mjolnir, as the Mighty Thor.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card mb-3 m-auto" style="max-width: 50%;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="./Assets/Series/28a_MsMarvel.jpg" class="img-fluid rounded-start" alt="MsMarvel">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h4 class="card-title">Ms Marvel</h4>
+                              <h5 class="card-subtitle">Serie</h5>
+                              <p class="card-text">Marvel Studios’ 'Ms. Marvel' is an original series that introduces Kamala Khan, a Muslim American teenager growing up in Jersey City. An avid gamer and a voracious fan-fiction scribe, Kamala is a Super Hero mega fan with an oversized imagination—particularly when it comes to Captain Marvel. Yet Kamala feels like she doesn’t fit in at school and sometimes even at home—that is, until she gets super powers like the heroes she’s always looked up to. Life gets better with super powers, right?</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card mb-3 m-auto" style="max-width: 50%;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="./Assets/Movies/28_DoctorStrangeInTheMultiverseOfMadness.jpg" class="img-fluid rounded-start" alt="DoctorStrangeMOM">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h4 class="card-title">Doctor Strange in the MoM</h4>
+                              <h5 class="card-subtitle">Movie</h5>
+                              <p class="card-text">Marvel Studios' "Doctor Strange in the Multiverse of Madness"—a thrilling ride through the Multiverse with Doctor Strange, his trusted friend Wong and Wanda Maximoff, aka Scarlet Witch. "Doctor Strange in the Multiverse of Madness" opens in U.S. theaters on May 6, 2022.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card mb-3 m-auto" style="max-width: 50%;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="./Assets/Movies/25_Spider-Man_NoWayHome.jpg" class="img-fluid rounded-start" alt="SpiderManNoWayHome">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h4 class="card-title">SpiderMan No Way Home</h4>
+                              <h5 class="card-subtitle">Movie</h5>
+                              <p class="card-text">Peter Parker's secret identity is revealed to the entire world. Desperate for help, Peter turns to Doctor Strange to make the world forget that he is Spider-Man. The spell goes horribly wrong and shatters the multiverse, bringing in monstrous villains that could destroy the world.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+                </div>
+                <div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
-            <div class="serie">
-                <img class="poster" src="./Assets/Series/29a_IAmGroot.jpg" alt="IAmGroot">
-                <p class="nombre">I am Groot</p>
-            </div>
-            <div class="pelicula">
-                <img class="poster" src="./Assets/Movies/29_Thor_LoveAndThunder.jpg" alt="ThorLoveAndThunder">
-                <p class="nombre">Thor Love and Thunder</p>
-            </div>
-            <div class="serie">
-                <img class="poster" src="./Assets/Series/28a_MsMarvel.jpg" alt="MsMarvel">
-                <p class="nombre">Ms Marvel</p>
-            </div>   
-            <div class="pelicula">
-                <img class="poster" src="./Assets/Movies/28_DoctorStrangeInTheMultiverseOfMadness.jpg" alt="DoctorStrangeMOM">
-                <p class="nombre">Doctor Strange in the MoM</p>
-            </div>   
-            <div class="pelicula">
-                <img class="poster" src="./Assets/Movies/25_Spider-Man_NoWayHome.jpg" alt="SpiderManNoWayHome">
-                <p class="nombre">SpiderMan No Way Home</p>
-            </div>                   
         </section>
-        <section class="sectionTierList">
-            <h3>Top Personajes</h3>
-            <div class="character">
-                <img class="poster" src="./Assets/Characters/Spiderman.png" alt="SpiderMan">
-                <p class="nombre">SpiderMan</p>
-            </div>
-            <div class="character">
-                <img class="poster" src="./Assets/Characters/Tony Stark.png" alt="TonyStark">
-                <p class="nombre">Tony Stark</p>
-            </div>
-            <div class="character">
-                <img class="poster" src="./Assets/Characters/Groot.jpg" alt="Groot">
-                <p class="nombre">Groot</p>
-            </div>
-            <div class="character">
-                <img class="poster" src="./Assets/Characters/Doctor Strange.png" alt="DoctorStange">
-                <p class="nombre">Doctor Stange</p>
-            </div>   
-            <div class="character">
-                <img class="poster" src="./Assets/Characters/Daredevil.png" alt="Daredevil">
-                <p class="nombre">Daredevil</p>
-            </div>                           
+        <!-- character TOP -->
+        <section class="sectionTopCharacter">
+            <h1>Top character</h1>
+            <div class="containerCharacter">
+              <div class="character">
+                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+              </div>
+              <div class="character">
+                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+              </div>
+              <div class="character">
+                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+              </div>
+              <div class="character">
+                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+              </div>
+              <div class="character">
+                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+              </div>
+              <div class="character">
+                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+              </div>
+              <div class="character">
+                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+              </div>
+              <div class="character">
+                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+              </div>
+              <div class="character">
+                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+              </div>
+              <div class="character">
+                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+              </div>
+            </div>                          
         </section>
-    </main> 
-    <footer>
-        <a class="foot" href="#top">Ir arriba</a>
-        <a class="foot" href="https://www.marvel.com/">Marvel Oficial</a>
+    </main>
+    <footer class="py-3 " style="background-color: lightblue;">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#top" class="nav-link px-2 text-muted">Ir arriba</a></li>
+        <li class="nav-item"><a href="https://www.marvel.com/" class="nav-link px-2 text-muted">Marvel Oficial</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy; Todos los derechos pertenecen a Marvel Company</p>
     </footer>
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
