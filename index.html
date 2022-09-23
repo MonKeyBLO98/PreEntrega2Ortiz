@@ -8,11 +8,11 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/estilo.css">
-    <link rel="shortcut icon" href="./Assets/Logotipos/Marveler Icon.png">
+    <link rel="shortcut icon" href="./Assets/Logotipos/marvelerIcon.png">
 </head>
 <body>  
     <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: lightblue;"> <!-- #04070a -->
+        <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #04070a;"> 
             <div class="container-fluid">
                 <!-- navbar-brand -->
               <a class="navbar-brand" href="#">
@@ -23,26 +23,26 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                  <li class="nav-item">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item btn btn-outline-warning"  style=" --bs-btn-font-size: 1rem;">
                     <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item btn btn-outline-danger">
                     <a class="nav-link" href="./Views/comics.html">Comics</a>
                   </li>
-                  <li class="nav-item dropdown">
+                  <li class="nav-item dropdown btn btn-outline-danger">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         MCU
                     </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./Views/peliculas.html">Peliculas</a></li>
+                    <ul class="dropdown-menu" style="background-color: #dc3545;">
+                      <li><a class="dropdown-item" href="./Views/movies.html">Movies</a></li>
                       <li><a class="dropdown-item" href="./Views/series.html">Series TV</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="./Views/mcu.html">MCU+</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Tier list</a>
+                  <li class="nav-item btn-outline-secondary" style="margin-top: .4rem;">
+                    <a class="nav-link disabled">Characters</a>
                   </li>
                 </ul>
                 <!-- search -->
@@ -65,7 +65,7 @@
             <h1> Last comics</h1>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 m-auto" mx="auto">
                 <div class="col">
-                    <div class="card h-100" style="width: 16rem;">
+                    <div class="card h-100 text-bg-warning hvr-grow-rotate" style="width: 16rem;">
                         <img src="./Assets/Comics/daredevil.jpg" class="card-img-top" alt="Daredevil">
                         <div class="card-body">
                             <h3 class="card-title">Daredevil</h3>
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100" style="width: 16rem;">
+                    <div class="card h-100 text-bg-warning hvr-grow-rotate" style="width: 16rem;">
                         <img src="./Assets/Comics/edgeofSpiderVerse.jpg" class="card-img-top" alt="EdgeOfSpiderVerse">
                         <div class="card-body">
                             <h3 class="card-title">Edge of SpiderVerse</h3>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100" style="width: 16rem;">
+                    <div class="card h-100 text-bg-warning hvr-grow-rotate" style="width: 16rem;">
                         <img src="./Assets/Comics/ironCat.jpg" class="card-img-top" alt="IronCat">
                         <div class="card-body">
                             <h3 class="card-title">Iron Cat</h3>
@@ -89,7 +89,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100" style="width: 16rem;">
+                    <div class="card h-100 text-bg-warning hvr-grow-rotate" style="width: 16rem;">
                         <img src="./Assets/Comics/msMarvel&MoonKnight.jpg" class="card-img-top" alt="MsMarvel&MoonKnight">
                         <div class="card-body">
                             <h3 class="card-title">Ms Marvel & MoonKnight</h3>
@@ -97,7 +97,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100" style="width: 16rem;">
+                    <div class="card h-100 text-bg-warning hvr-grow-rotate" style="width: 16rem;">
                         <img src="./Assets/Comics/ageofUltron1.jpg" class="card-img-top" alt="AgeofUltron #1">
                         <div class="card-body">
                             <h3 class="card-title">Age of Ultron #1</h3>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100" style="width: 16rem;">
+                    <div class="card h-100 text-bg-warning hvr-grow-rotate" style="width: 16rem;">
                         <img src="./Assets/Comics/doctorStrange1.jpg" class="card-img-top" alt="DoctorStrange#1">
                         <div class="card-body">
                             <h3 class="card-title">Doctor Strange #1</h3>
@@ -113,7 +113,7 @@
                     </div>  
                 </div>
                 <div class="col">
-                    <div class="card h-100" style="width: 16rem;">
+                    <div class="card h-100 text-bg-warning hvr-grow-rotate" style="width: 16rem;">
                         <img src="./Assets/Comics/hulk4.jpg" class="card-img-top" alt="Hulk#4">
                         <div class="card-body">
                             <h3 class="card-title">Hulk #4</h3>
@@ -121,7 +121,7 @@
                     </div>  
                 </div>
                 <div class="col">
-                    <div class="card h-100" style="width: 16rem;">
+                    <div class="card h-100 text-bg-warning hvr-grow-rotate" style="width: 16rem;">
                         <img src="./Assets/Comics/jessicaJones1.jpg" class="card-img-top" alt="JessicaJones#1">
                         <div class="card-body">
                             <h3 class="card-title">Jessica Jones #1</h3>
@@ -144,7 +144,7 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <div class="card mb-3 m-auto" style="max-width: 50%;">
+                    <div class="card mb-3 m-auto text-bg-dark border-warning" style="max-width: 50%;">
                         <div class="row g-0">
                           <div class="col-md-4">
                             <img src="./Assets/Series/29b_SheHulk.jpg" class="img-fluid rounded-start" alt="SheHulk">
@@ -161,7 +161,7 @@
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="card mb-3 m-auto" style="max-width: 50%;">
+                    <div class="card mb-3 m-auto text-bg-dark border-warning" style="max-width: 50%;">
                         <div class="row g-0">
                           <div class="col-md-4">
                             <img src="./Assets/Series/29a_IAmGroot.jpg" class="img-fluid rounded-start" alt="IAmGroot">
@@ -177,7 +177,7 @@
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="card mb-3 m-auto" style="max-width: 50%;">
+                    <div class="card mb-3 m-auto text-bg-dark border-warning" style="max-width: 50%;">
                         <div class="row g-0">
                           <div class="col-md-4">
                             <img src="./Assets/Movies/29_Thor_LoveAndThunder.jpg" class="img-fluid rounded-start" alt="ThorLoveAndThunder">
@@ -193,7 +193,7 @@
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="card mb-3 m-auto" style="max-width: 50%;">
+                    <div class="card mb-3 m-auto text-bg-dark border-warning" style="max-width: 50%;">
                         <div class="row g-0">
                           <div class="col-md-4">
                             <img src="./Assets/Series/28a_MsMarvel.jpg" class="img-fluid rounded-start" alt="MsMarvel">
@@ -209,7 +209,7 @@
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="card mb-3 m-auto" style="max-width: 50%;">
+                    <div class="card mb-3 m-auto text-bg-dark border-warning" style="max-width: 50%;">
                         <div class="row g-0">
                           <div class="col-md-4">
                             <img src="./Assets/Movies/28_DoctorStrangeInTheMultiverseOfMadness.jpg" class="img-fluid rounded-start" alt="DoctorStrangeMOM">
@@ -225,7 +225,7 @@
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="card mb-3 m-auto" style="max-width: 50%;">
+                    <div class="card mb-3 m-auto text-bg-dark border-warning" style="max-width: 50%;">
                         <div class="row g-0">
                           <div class="col-md-4">
                             <img src="./Assets/Movies/25_Spider-Man_NoWayHome.jpg" class="img-fluid rounded-start" alt="SpiderManNoWayHome">
@@ -259,39 +259,90 @@
             <h1>Top character</h1>
             <div class="containerCharacter">
               <div class="character">
-                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+                <div class="carreaux_presentation_light" style="background-image:url(./Assets/Logotipos/comingSoon.png);">
+                  <div class="shadow_swhow_mini">
+                      <div class="deroul_titre">NAME CHARACTER</div>
+                      <div class="deroul_soustitre">Total Points</div>
+                  </div>
+                </div>
               </div>
               <div class="character">
-                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+                <div class="carreaux_presentation_light" style="background-image:url(./Assets/Logotipos/comingSoon.png);">
+                  <div class="shadow_swhow_mini">
+                      <div class="deroul_titre">NAME CHARACTER</div>
+                      <div class="deroul_soustitre">Total Points</div>
+                  </div>
+                </div>
               </div>
               <div class="character">
-                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+                <div class="carreaux_presentation_light" style="background-image:url(./Assets/Logotipos/comingSoon.png);">
+                  <div class="shadow_swhow_mini">
+                      <div class="deroul_titre">NAME CHARACTER</div>
+                      <div class="deroul_soustitre">Total Points</div>
+                  </div>
+                </div>
               </div>
               <div class="character">
-                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+                <div class="carreaux_presentation_light" style="background-image:url(./Assets/Logotipos/comingSoon.png);">
+                  <div class="shadow_swhow_mini">
+                      <div class="deroul_titre">NAME CHARACTER</div>
+                      <div class="deroul_soustitre">Total Points</div>
+                  </div>
+                </div>
               </div>
               <div class="character">
-                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+                <div class="carreaux_presentation_light" style="background-image:url(./Assets/Logotipos/comingSoon.png);">
+                  <div class="shadow_swhow_mini">
+                      <div class="deroul_titre">NAME CHARACTER</div>
+                      <div class="deroul_soustitre">Total Points</div>
+                  </div>
+                </div>
               </div>
               <div class="character">
-                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+                <div class="carreaux_presentation_light" style="background-image:url(./Assets/Logotipos/comingSoon.png);">
+                  <div class="shadow_swhow_mini">
+                      <div class="deroul_titre">NAME CHARACTER</div>
+                      <div class="deroul_soustitre">Total Points</div>
+                  </div>
+                </div>
               </div>
               <div class="character">
-                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+                <div class="carreaux_presentation_light" style="background-image:url(./Assets/Logotipos/comingSoon.png);">
+                  <div class="shadow_swhow_mini">
+                      <div class="deroul_titre">NAME CHARACTER</div>
+                      <div class="deroul_soustitre">Total Points</div>
+                  </div>
+                </div>
               </div>
               <div class="character">
-                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+                <div class="carreaux_presentation_light" style="background-image:url(./Assets/Logotipos/comingSoon.png);">
+                  <div class="shadow_swhow_mini">
+                      <div class="deroul_titre">NAME CHARACTER</div>
+                      <div class="deroul_soustitre">Total Points</div>
+                  </div>
+                </div>
               </div>
               <div class="character">
-                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+                <div class="carreaux_presentation_light" style="background-image:url(./Assets/Logotipos/comingSoon.png);">
+                  <div class="shadow_swhow_mini">
+                      <div class="deroul_titre">NAME CHARACTER</div>
+                      <div class="deroul_soustitre">Total Points</div>
+                  </div>
+                </div>
               </div>
               <div class="character">
-                  <img class="poster" src="./Assets/Logotipos/comingSoon.png" alt="comingSoon" width="300px">
+                <div class="carreaux_presentation_light" style="background-image:url(./Assets/Logotipos/comingSoon.png);">
+                  <div class="shadow_swhow_mini">
+                      <div class="deroul_titre">NAME CHARACTER</div>
+                      <div class="deroul_soustitre">Total Points</div>
+                  </div>
+                </div>
               </div>
+
             </div>                          
         </section>
     </main>
-    <footer class="py-3 " style="background-color: lightblue;">
+    <footer class="py-3 navbar-dark " style="background-color: #04070a;">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <li class="nav-item"><a href="#top" class="nav-link px-2 text-muted">Ir arriba</a></li>
         <li class="nav-item"><a href="https://www.marvel.com/" class="nav-link px-2 text-muted">Marvel Oficial</a></li>
